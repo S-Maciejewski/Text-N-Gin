@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+// https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=37474F&secondary.color=BDBDBD
+$primary: #37474f;
+$p-light: #62727b;
+$p-dark: #102027;
+
+$secondary: #bdbdbd;
+$s-light: #efefef;
+$s-dark: #8d8d8d;
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+

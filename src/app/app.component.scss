@@ -1,0 +1,65 @@
+@import '../styles.scss';
+
+mat-drawer-container {
+    height: 100%;
+    overflow: hidden;
+
+    img {
+        width: 399px;
+    }
+
+    .logo {
+        position: fixed;
+        right: 0px;
+        top: 50px;
+    }
+
+    .banner {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .loadButton {
+        position: fixed;
+        right: 100px;
+        top: 25px;
+        background: #37474f;
+        color: white;
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+mat-drawer-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: $s-light;
+
+    mat-toolbar {
+        background: $secondary;
+        display: flex;
+        flex-flow: inherit;
+        align-items: center;
+
+        .title {
+            font-weight: bold;
+        }
+
+        .author {
+            font-size: 14px;
+        }
+    }
+}
+
+mat-drawer {
+    width: 400px;
+}
+
+app-main-view {
+    margin-top: 12px;
+    width: 100% !important;
+}
