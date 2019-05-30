@@ -29,6 +29,7 @@ mat-drawer-container {
         width: 200px;
         height: 50px;
         font-size: 20px;
+        z-index: 1;
     }
 }
 
@@ -40,7 +41,8 @@ mat-drawer-content {
     background: $s-light;
 
     mat-toolbar {
-        background: $secondary;
+        background: $primary;
+        color: white;
         display: flex;
         flex-flow: inherit;
         align-items: center;
