@@ -1,3 +1,14 @@
 mat-card-header {
     margin-bottom: 10px;
+
+    span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.node {
+    mat-card-header {
+        font-size: 18px;
+    }
 }

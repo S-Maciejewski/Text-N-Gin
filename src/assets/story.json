@@ -1,0 +1,45 @@
+{
+    "title": "test story",
+    "author": "developer",
+    "nodes": [
+        {
+            "nodeID": 0,
+            "text": "test root node text",
+            "answers": [
+                {
+                    "text": "yes",
+                    "nextNode": 1
+                },
+                {
+                    "text": "no",
+                    "nextNode": 2
+                }
+            ]
+        },
+        {
+            "nodeID": 1,
+            "text": "root -> yes",
+            "answers": [
+                {
+                    "text": "the end",
+                    "nextNode": 4
+                }
+            ]
+        },
+        {
+            "nodeID": 2,
+            "text": "root -> no",
+            "answers": [
+                {
+                    "text": "the end",
+                    "nextNode": 4
+                }
+            ]
+        },
+        {
+            "nodeID": 4,
+            "text": "reached the end",
+            "answers": []
+        }
+    ]
+}

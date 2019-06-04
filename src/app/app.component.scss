@@ -43,17 +43,7 @@ mat-drawer-content {
     mat-toolbar {
         background: $primary;
         color: white;
-        display: flex;
-        flex-flow: inherit;
-        align-items: center;
-
-        .title {
-            font-weight: bold;
-        }
-
-        .author {
-            font-size: 14px;
-        }
+        font-weight: bold;
     }
 }
 
