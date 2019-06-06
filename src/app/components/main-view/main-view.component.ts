@@ -14,6 +14,7 @@ export class MainViewComponent implements OnInit {
   story: any;
   currentNode: Number = 0;
   storyLoaded: Boolean = false;
+  nodeHistory: Number[] = [];
 
   constructor(private http: Http) {
 
@@ -39,5 +40,28 @@ export class MainViewComponent implements OnInit {
 
   getNodeAnswers() {
     return this.story.nodes.filter(node => node.nodeID === this.currentNode)[0].answers;
+  }
+
+  setCurrentNode(nodeNumber) {
+    this.currentNode = nodeNumber;
+  }
+
+  getNodeDescription(nodeNumber) {
+    return this.story.nodes.filter(node => node.nodeID === nodeNumber)[0].text.split(' ').slice(0, 8).join(' ') + '(...)';
+  }
+
+  comeBack(nodeNumber) {
+    this.currentNode = nodeNumber;
+    this.nodeHistory = this.nodeHistory.filter(node => this.nodeHistory.indexOf(node) < this.nodeHistory.indexOf(nodeNumber));
+  }
+
+  chooseAnswer(answer) {
+    this.nodeHistory.push(this.currentNode);
+    if (answer.possibleOutcomes) {
+      this.currentNode = Math.random() > answer.possibleOutcomes[0].probability ?
+        answer.possibleOutcomes[0].nextNode : answer.possibleOutcomes[1].nextNode;
+    } else {
+      this.currentNode = answer.nextNode;
+    }
   }
 }

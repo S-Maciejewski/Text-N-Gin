@@ -13,6 +13,19 @@
                 {
                     "text": "no",
                     "nextNode": 2
+                },
+                {
+                    "text": "maybe",
+                    "possibleOutcomes": [
+                        {
+                            "probability": 0.5,
+                            "nextNode": 4
+                        },
+                        {
+                            "probability": 0.5,
+                            "nextNode": 5
+                        }
+                    ]
                 }
             ]
         },
@@ -22,7 +35,7 @@
             "answers": [
                 {
                     "text": "the end",
-                    "nextNode": 4
+                    "nextNode": 6
                 }
             ]
         },
@@ -32,12 +45,32 @@
             "answers": [
                 {
                     "text": "the end",
-                    "nextNode": 4
+                    "nextNode": 6
                 }
             ]
         },
         {
             "nodeID": 4,
+            "text": "maybe no",
+            "answers": [
+                {
+                    "text": "the end",
+                    "nextNode": 6
+                }
+            ]
+        },
+        {
+            "nodeID": 5,
+            "text": "maybe yes",
+            "answers": [
+                {
+                    "text": "the end",
+                    "nextNode": 6
+                }
+            ]
+        },
+        {
+            "nodeID": 6,
             "text": "reached the end",
             "answers": []
         }
