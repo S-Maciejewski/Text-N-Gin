@@ -10,7 +10,7 @@ import { Http, Response, Headers, RequestOptions } from '@angular/http';
 export class MainViewComponent implements OnInit {
   storyTitle: String = 'storyTitle';
   author: String = 'author';
-  storyFile: String = 'story.json';
+  storyFile: String = 'trueStory.json';
   story: any;
   currentNode: Number = 0;
   storyLoaded: Boolean = false;

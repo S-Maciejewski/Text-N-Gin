@@ -1,0 +1,146 @@
+{
+    "title": "A tale of empty fridge",
+    "author": "Hungry Student",
+    "nodes": [
+        {
+            "nodeID": 0,
+            "text": "It's a day as any other. You wake up, eat some delicoius toasts for breakfast, take your bag and prepare to leave...",
+            "answers": [
+                {
+                    "text": "Tweet 'Let's get that bread!' and go to work",
+                    "nextNode": 1
+                }
+            ]
+        },
+        {
+            "nodeID": 1,
+            "text": "Nothing special here, some problems to solve, a call and a meeting to attend...",
+            "answers": [
+                {
+                    "text": "Boring, go home, maybe jump in for some Hut Lunch on my way back?",
+                    "possibleOutcomes": [
+                        {
+                            "probability": 0.5,
+                            "nextNode": 2
+                        },
+                        {
+                            "probability": 0.5,
+                            "nextNode": 3
+                        }
+                    ]
+                },
+                {
+                    "text": "Boring, go home, at least You have some delicious lunch waiting for you there!",
+                    "nextNode": 5
+                }
+            ]
+        },
+        {
+            "nodeID": 2,
+            "text": "Nice, that Hut Lunch is seriously good value, will keep me going for another few hours...",
+            "answers": [
+                {
+                    "text": "You're full, go home",
+                    "nextNode": 4
+                }
+            ]
+        },
+        {
+            "nodeID": 3,
+            "text": "Damn you Pizza Hut! 'Closed becouse of <some swear words written over, making this part impossible to read>' \n Time to go home...",
+            "answers": [
+                {
+                    "text": "Go home hungry as hell",
+                    "nextNode": 5
+                }
+            ]
+        },
+        {
+            "nodeID": 4,
+            "text": "You just got home, hunger bar full, chill for half an hour and decide to write some of that IA project that Mr. Gingerbread told you to do...",
+            "answers": [
+                {
+                    "text": "Get to work, stay hydrated, stay motivated!",
+                    "nextNode": 10
+                }
+            ]
+        },
+        {
+            "nodeID": 5,
+            "text": "You just got home, hunger bar low! No Bae at home? That is strange... it means no lunch! You look into the fridge and see nothing! Someone forgot to go shopping!",
+            "answers": [
+                {
+                    "text": "Quickly! Go shopping before you die of hunger!",
+                    "nextNode": 6
+                },
+                {
+                    "text": "Try to salvage some food from kitchen cupboards, you know Bae keeps some weird healthy food there",
+                    "nextNode": 7
+                }
+            ]
+        },
+        {
+            "nodeID": 6,
+            "text": "Bierdonka luckilly opened, you grab some cheese, bread, salami and ketchup. You come home and have to decide what to make of theese...",
+            "answers": [
+                {
+                    "text": "Isn't that obvious? Just make some toasts, as awesome as ever!",
+                    "nextNode": 8
+                },
+                {
+                    "text": "Tomato soup (microwaved ketchup of course) - for the bold",
+                    "nextNode": 9
+                }
+            ]
+        },
+        {
+            "nodeID": 7,
+            "text": "Suprisingly good kale, hunger bar full, maybe you should start making this IA project?",
+            "answers": [
+                {
+                    "text": "Go to sleep, that was one difficult day hunting for food!",
+                    "nextNode": 11
+                },
+                {
+                    "text": "Get to work, stay hydrated, stay motivated!",
+                    "nextNode": 10
+                }
+            ]
+        },
+        {
+            "nodeID": 8,
+            "text": "Toasts make your belly full, you can now work on the IA project without the risk of starving!",
+            "answers": [
+                {
+                    "text": "Get to work right away! The toasts gave you so much energy!",
+                    "nextNode": 10
+                }
+            ]
+        },
+        {
+            "nodeID": 9,
+            "text": "That soup was so bad you died...",
+            "answers": [
+                {
+                    "text": ":(",
+                    "nextNode": 11
+                }
+            ]
+        },
+        {
+            "nodeID": 10,
+            "text": "Working late hours to finish the project, worth it!",
+            "answers": [
+                {
+                    "text": "Go to sleep, you earned it!",
+                    "nextNode": 11
+                }
+            ]
+        },
+        {
+            "nodeID": 11,
+            "text": "The end. Always remember to keep your fridge well stocked!",
+            "answers": []
+        }
+    ]
+}
